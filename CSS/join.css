@@ -1,0 +1,178 @@
+*{margin:0;padding: 0;}
+body{
+	background-color:#1a1a1a; 
+}
+.h7{
+	font-size:15px;
+	font-weight: lighter;
+}
+.h10{
+	font-size: 14px;
+	color: #cccccc;
+}
+.w-80{
+	width: 80%;
+}
+.w-40{
+	width: 40%;;
+}
+.w-96{
+	width: 96% !important;
+}
+#content{
+background-color:#1a1a1a;
+
+}
+#weixin1{
+	position: relative;	
+}
+#weixin1::after{
+	content: url(../IMAGE/index_img/erweima.jpg);
+	display: none;
+
+}
+#weixin1:hover::after{
+	display: block;
+	position: absolute;
+	z-index: 999;
+	left:-100px;
+}
+#head-title{
+	position: fixed;
+	z-index: 1500;
+	width: 100%;
+}
+#header{
+	width: 100%;
+	height: 25px;
+	font-size: 14px;
+	color: white;
+	background-color: #161819;
+	text-align: center;
+	margin-left: 0;
+}
+#header_log{
+	width: 100%;
+	height: 100px;
+	background-color:#161819;
+}
+#h-left{
+	height: 50px;
+	background-color:#161819;
+	box-sizing: border-box;
+	margin-left: 13%;
+	width: 20px;
+	cursor: pointer;
+}
+#logo{
+	box-sizing: border-box;
+	width: 20%;
+	text-align: center;
+	margin-top: -40px;
+}
+.bg-black{
+	background-color: #161819 !important;
+}
+.bg-black2{
+	background-color: #000000 !important;
+}
+@media (max-width: 700px){
+.nav-line{
+	border-bottom: 1px solid white !important;
+	}
+}
+.content{
+	margin-top: 179px;
+	background-color: #1A1A1A;
+}
+@media (min-width:576px) {
+	.write_message{
+		padding:15px 0 15px 0;
+	}
+	.write-input{
+		padding: 15px 0 15px 0;
+	}
+}
+@media (min-width:576px) {
+	.write_message{
+		padding:20px 0 20px 0;
+	}
+	.write-input{
+		padding: 20px 0 20px 0;
+	}
+}
+@media (min-width:576px) {
+	.write_message{
+		padding:30px 0 30px 0;
+	}
+	.write-input{
+		padding: 30px 0 30px 0;
+	}
+}
+.content input{
+	width: 100%;
+	height: 36px;
+	box-sizing: border-box;
+	padding: 5px 10px 5px 15px;
+	color: white;
+	background-color: transparent;
+	border: 1px solid #bf9160;
+	outline: 0;
+	display: block;
+}
+.userinfo div+div{
+	margin-top: 25px;
+}
+.loadUp{
+	background-image: url(../IMAGE/join_img/loadUp.png);
+	background-repeat: no-repeat;
+	background-position:left;
+ background-size: 3%;
+ box-sizing: border-box;
+ padding-left: 20px!important;
+}
+textarea{
+	background-color: transparent;
+	border:1px solid #bf9160;
+	width: 100%;
+	min-height:250px ;
+	outline: 0;
+	color: white;
+	box-sizing: border-box;
+	padding: 10px 0 10px 20px;
+}
+.btn-gold{
+	text-decoration:none ;
+	color:  #bf9160 !important;
+	border: 1px solid  #bf9160 !important;
+}
+.btn-gold:hover{
+	background-color: white;
+	box-shadow: 0 0 20px white inset;
+}
+/* 尾部样式声明 */
+	.foot{
+		width: 100%;
+		background-color:#161819; 
+	}
+.container-footer{
+		width: 70% !important;
+		margin-left: 15%;
+		align-items: center;
+		justify-content: center;
+		}
+/*	鼠标悬停微信图标弹出二维码*/
+.weixin{
+	position: relative;	
+}
+.weixin::before{
+	content: url(../IMAGE/produce_img/erweima.jpg);
+	display: none;
+}
+.weixin:hover::before{
+	display: block;
+	position: absolute;
+	top:-280px;
+	left: -100px;
+	z-index: 999;
+}

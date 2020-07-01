@@ -1,0 +1,376 @@
+/* 导航栏头部、body、容器的样式声明*/
+*{margin:0;padding: 0;}
+body{
+	background-color:black; 
+}
+
+.h7{
+	font-size:15px;
+	font-weight: lighter;
+}
+.h10{
+	font-size: 14px;
+	color: #cccccc;
+}
+.w-80{
+	width: 80%;
+}
+a:hover{
+	text-decoration: none!important;
+}
+.container-fluid{
+	padding-top: 20px 0 20px 0;
+}
+#weixin1{
+	position: relative;	
+}
+#weixin1::after{
+	content: url(../IMAGE/index_img/erweima.jpg);
+	display: none;
+}
+#weixin1:hover::after{
+	display: block;
+	position: absolute;
+	z-index: 999;
+	left:-100px;
+}
+#head-title{
+	position: fixed;
+	z-index: 1500;
+	width: 100%;
+}
+#header{
+	width: 100%;
+	height: 25px;
+	font-size: 14px;
+	color: white;
+	background-color: #161819;
+	text-align: center;
+	margin-left: 0;
+}
+#header_log{
+	width: 100%;
+	height: 100px;
+	background-color:#161819;
+}
+#h-left{
+	height: 50px;
+	background-color:#161819;
+	box-sizing: border-box;
+	margin-left: 13%;
+	width: 20px;
+	cursor: pointer;
+}
+#logo{
+	box-sizing: border-box;
+	width: 20%;
+	text-align: center;
+	margin-top: -40px;
+}
+.bg-black{
+	background-color: #161819 !important;
+}
+.bg-black2{
+	background-color: #000000 !important;
+}
+@media (max-width: 700px){
+.nav-line{
+	border-bottom: 1px solid white !important;
+	}
+}
+/*body部分样式声明*/
+#first_bg img{
+	margin-top: 179px;
+}
+#next_bg_front{
+	height: 200px;
+	background-color: rgba(0,0,0,.5);
+	position: absolute;
+	color: white;
+	display: flex;
+	justify-content: center;
+}
+#next_bg_front p{
+	animation:slideInRight 4s 1 ;
+}
+#next_bg_front h2{
+	animation:slideInLeft 4s 1;
+}
+#next_bg>div{
+	position: absolute;
+	top:45%;
+	left: 7%;
+}
+#next_bg p{
+	text-indent: 50px;
+}
+@media (min-width: 576px){
+#next_bg>div{
+	width: 80%;
+	top: 20%;
+	}
+}
+@media (min-width: 768px){
+#next_bg>div{
+	top: 30%;
+	width: 60%;
+	}
+}
+@media (min-width: 992px){
+#next_bg>div{
+	top: 35%;
+	left: 15%;
+	width:68.5%;
+	}
+}
+#next_bg{
+	width: 100%;
+	/*height: 80vh;*/
+	background:url(../IMAGE/index_img/index_bg2.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	overflow: hidden;
+}
+@media (min-width: 576px){
+	#next_bg{
+		height:60vh;
+	}
+}
+@media (min-width: 768px){
+	#next_bg{
+		height:70vh;
+	}
+}
+@media (min-width: 992px){
+	#next_bg{
+		height:80vh;
+	}
+}
+#next_bg_front a{
+	animation:slideInBottom 4s 1;
+}
+@keyframes slideInBottom{
+	0%{transform: translateY(80px);}
+	100%{transform: translateY(0px);}
+}
+#next_bg_front .btn{
+	border-radius: 1rem;
+}
+
+/*锚点图样式声明*/
+
+#pic{
+	overflow: hidden;
+}
+
+.wrap ul{
+	width: 96%;
+}
+.wrap ol li:nth-child(2){
+	border-left: 1px solid #965300 ;
+}
+.wrap ol li:last-child{
+	border-left: 1px solid #965300 ;
+} 
+.ban-front{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	position: absolute;
+	text-align: center;
+}
+@media (min-width: 476px){
+	.ban-front{
+		top: 2%;
+		width: 100%;
+		height:204px;
+	}
+}
+@media (min-width: 768px){
+	.ban-front{
+		top:36%;
+		width: 100%;
+		padding-top: 20px;
+	}
+
+}
+@media (min-width: 992px){
+	.ban-front{
+		top:52%;
+		height: 200px;
+		width:100%;
+		justify-content:center;
+	}
+}
+@media (min-width: 1200px){
+	.ban-front{
+		top:56%;
+		height: 314px;
+		width:100%;
+		justify-content:center;
+	}
+}
+.pro1-span{
+	text-indent: 50px;
+}
+.d-flex .btn:hover{
+	border:1px solid white!important;
+	background-color: white;
+	box-shadow: 0 0 20px white;
+	color: black!important;
+	position:relative !important;
+}
+.bg-darkBrown{
+	background-color: #1a1a1a;
+}
+.wrap{
+	width:80%;
+	overflow: hidden;
+	position: relative;
+	padding-top:100px;
+}
+
+.wrap ol li img:hover{
+	background-color: #965300!important;
+	cursor: pointer;
+}
+.wrap ul li{
+	position: relative;
+}
+.container-fluid a{
+	border: 1px solid transparent;
+}
+
+/*最新动态*/
+.new1,.new2{
+	transition: 1s;
+	box-sizing: border-box;
+}
+.new1:hover{
+	box-shadow: -3px 3px 5px black; 
+	transform: translateX(-2px);
+	cursor: pointer;	
+}
+.new2:hover{
+	box-shadow: -3px 3px 5px black; 
+	transform: translateX(2px);
+	cursor: pointer;
+}
+.new1 p:hover,.new2 p:hover{
+	color: #c47f1a!important;
+}
+.arrow-right{
+	font-size: 10px;
+}
+.arrow-right img{
+	transition-duration: 2s;
+
+}
+.arrow-right img:hover{
+	transform: translate(10px);
+}
+/*-----------门店加盟---------*/
+	/*容器大小*/
+	.container-reservation{
+		width: 70% !important;
+		margin-left: 15%;
+		align-items: center;
+		justify-content: center;
+		border-bottom: 1px solid #bf9160;
+	}
+	/*标题头部样式*/
+	.reservation-title{
+		border-bottom: 1px solid #bf9160;
+		width: 80%;
+	}
+	.reservation-info .form-control{
+		background-color: #272522;
+		outline: 0;
+		border:none;
+		border-radius: 3px !important;
+		box-sizing: border-box;
+		display: inline-block;
+		font-size: 15px;
+		line-height: 15px;
+		height: 36px;
+		padding-left: 15px !important;
+		color: white; 
+	}
+	.reservation-info .form-control:focus{
+		background-color: #272522;
+		color: white;
+	}
+	.reservation-info .formFile{
+		background-image: url(../IMAGE/index_img/loadup.png);
+		background-repeat: no-repeat;
+		background-position:left;
+		background-position: 5%;
+		padding-left: 40px !important;
+	}
+	.reservation-info .textArea{
+		background: #272522;
+		height: 100px;
+		border:0;
+		outline: 0;
+		margin-left: 10px;
+		border-radius: 5px;
+		box-sizing: border-box;
+		padding-left: 25px !important;
+		color: white;
+	}
+	.info-submit .btn{
+		background-color: #272522;
+		outline: 0;
+		border:0;
+		transition-duration: 1s;
+	}
+	.info-submit .btn:hover{
+		color: #bf9160 !important;
+		transform: translateY(-1px);
+	}
+	.logo2{
+		background-image: url(../IMAGE/index_img/logo2.png);
+		background-repeat: no-repeat;
+		height:250px !important;
+		background-position: top;
+		background-size: 80%;
+	}
+	/*	尾部样式声明*/
+		.container-footer{
+		width: 70% !important;
+		margin-left: 15%;
+		align-items: center;
+		justify-content: center;
+		}
+	/*面包屑导航*/
+	.breadcrumb-item a,li:first-child{
+		color: gray;
+		background-color: transparent;
+		font-size: 15px;
+	}
+	.breadcrumb-item a:hover{
+		color: gray !important;
+		text-decoration: none;
+	}
+.breadcrumb{
+	background-color: transparent !important;
+}
+/*	鼠标悬停微信图标弹出二维码*/
+.weixin{
+	position: relative;	
+}
+.weixin::before{
+	content: url(../IMAGE/index_img/erweima.jpg);
+	display: none;
+}
+.weixin:hover::before{
+	display: block;
+	position: absolute;
+	top:-280px;
+	left: -100px;
+	z-index: 999;
+}
